@@ -274,9 +274,12 @@ export default function Home() {
           <h1 className="text-[35px] font-bold">
             Get your vehicle service done online at one place
           </h1>
-          <button className="bg-[#FF6433] text-white rounded-lg px-8 py-3 hover:scale-95 duration-200">
+          <Link
+            href="/services"
+            className="bg-[#FF6433] text-white rounded-lg px-8 py-3 hover:scale-95 duration-200"
+          >
             Book a service
-          </button>
+          </Link>
           <div className="flex flex-col items-center gap-4 lg:flex-row">
             <UilClockThree className="text-[#939191]"></UilClockThree>
             <div className="flex flex-col gap-2">
