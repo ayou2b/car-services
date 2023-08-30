@@ -33,8 +33,8 @@ function Page() {
     <Fragment>
       <Header></Header>
 
-      <section className="px-14 mt-5  w-full flex flex-col justify-center sm:px-16 md:px-20 lg:px-24 xl:px-28 mb-20">
-        <div className=" lg:relative">
+      <section className="px-14 mt-5  w-full flex  justify-center items-center sm:px-16 md:px-20 lg:px-24 xl:px-28 mb-20">
+        <div className=" lg:relative w-full 2xl:max-w-[1300px]">
           <div
             style={{
               backgroundImage: `url(${hero_image.src})`,
@@ -61,172 +61,179 @@ function Page() {
         </div>
       </section>
 
-      <section className="px-14 sm:px-16 md:px-20 lg:px-24 xl:px-28 mb-20 bg-[#F5F5F5] py-12 flex flex-col items-center lg:flex-row lg:justify-center gap-10">
-        <div className="bg-white p-6 max-w-lg lg:max-h-[550px] w-full h-full flex flex-col gap-10">
-          <Image
-            src={image_1}
-            alt=""
-            className="object-cover w-full h-64"
-          ></Image>
-          <div className="flex flex-col transition-all items-center lg:items-start gap-2">
-            <h3 className="text-[20px] font-semibold">Auto Diagnostics</h3>
-            <p className="leading-7 text-[#232536]">
-              Through True Rich Attended does no end it his mother since
-              favourable real had half every him case in packages enquire we up
-              ecstatic. Through True Rich Attended does no end it his mother.
-            </p>
+      <section className="px-14 w-full sm:px-16 md:px-20 lg:px-24 xl:px-28 mb-20 bg-[#F5F5F5] py-12 flex items-center justify-center">
+        <div className="w-full 2xl:max-w-[1300px] flex flex-col items-center lg:flex-row lg:justify-center gap-10">
+          <div className="bg-white p-6 max-w-lg lg:max-h-[550px] w-full h-full flex flex-col gap-10">
+            <Image
+              src={image_1}
+              alt=""
+              className="object-cover w-full h-64"
+            ></Image>
+            <div className="flex flex-col transition-all items-center lg:items-start gap-2">
+              <h3 className="text-[20px] font-semibold">Auto Diagnostics</h3>
+              <p className="leading-7 text-[#232536]">
+                Through True Rich Attended does no end it his mother since
+                favourable real had half every him case in packages enquire we
+                up ecstatic. Through True Rich Attended does no end it his
+                mother.
+              </p>
+              <Link
+                href="/single-service"
+                className="flex flex-col items-center gap-3 lg:flex-row font-medium hover:gap-4 duration-200 cursor-pointer"
+              >
+                See service details
+                <Image src={arrow} alt="" width={30} objectFit="cover"></Image>
+              </Link>
+            </div>
+          </div>
+
+          <div className="flex flex-col w-full items-center gap-10 md:grid md:grid-cols-2">
             <Link
               href="/single-service"
-              className="flex flex-col items-center gap-3 lg:flex-row font-medium hover:gap-4 duration-200 cursor-pointer"
+              className="flex items-center justify-center h-full p-10 bg-[#FF6433] w-full text-white"
             >
-              See service details
-              <Image src={arrow} alt="" width={30} objectFit="cover"></Image>
+              <div className="flex items-center justify-center flex-col gap-2">
+                <Image src={icon_1} alt="" width={25}></Image>
+                <p>Auto Dignostics</p>
+              </div>
+            </Link>
+
+            <Link
+              href="/single-service"
+              className="flex items-center justify-center p-10 bg-white w-full text-black"
+            >
+              <div className="flex items-center justify-center flex-col gap-2">
+                <Image src={icon_2} alt="" width={25}></Image>
+                <p>Engin Repair</p>
+              </div>
+            </Link>
+
+            <Link
+              href="/single-service"
+              className="flex items-center justify-center p-10 bg-white w-full text-black"
+            >
+              <div className="flex items-center justify-center flex-col gap-2">
+                <Image src={icon_3} alt="" width={25}></Image>
+                <p>Body Work</p>
+              </div>
+            </Link>
+
+            <Link
+              href="/single-service"
+              className="flex items-center justify-center p-10 bg-white w-full text-black"
+            >
+              <div className="flex items-center justify-center flex-col gap-2">
+                <Image src={icon_4} alt="" width={25}></Image>
+                <p>Batteries</p>
+              </div>
+            </Link>
+
+            <Link
+              href="/single-service"
+              className="flex items-center justify-center p-10 bg-white w-full text-black"
+            >
+              <div className="flex items-center justify-center flex-col gap-2">
+                <Image src={icon_5} alt="" width={25}></Image>
+                <p>Car wash</p>
+              </div>
+            </Link>
+
+            <Link
+              href="/single-service"
+              className="flex items-center justify-center p-10 bg-white w-full text-black"
+            >
+              <div className="flex items-center justify-center flex-col gap-2">
+                <Image src={icon_6} alt="" width={25}></Image>
+                <p>AC Repair</p>
+              </div>
             </Link>
           </div>
         </div>
-
-        <div className="flex flex-col items-center gap-10 md:grid md:grid-cols-2">
-          <Link
-            href="/single-service"
-            className="flex items-center justify-center h-full p-10 bg-[#FF6433] w-full text-white"
-          >
-            <div className="flex items-center justify-center flex-col gap-2">
-              <Image src={icon_1} alt="" width={25}></Image>
-              <p>Auto Dignostics</p>
-            </div>
-          </Link>
-
-          <Link
-            href="/single-service"
-            className="flex items-center justify-center p-10 bg-white w-full text-black"
-          >
-            <div className="flex items-center justify-center flex-col gap-2">
-              <Image src={icon_2} alt="" width={25}></Image>
-              <p>Engin Repair</p>
-            </div>
-          </Link>
-
-          <Link
-            href="/single-service"
-            className="flex items-center justify-center p-10 bg-white w-full text-black"
-          >
-            <div className="flex items-center justify-center flex-col gap-2">
-              <Image src={icon_3} alt="" width={25}></Image>
-              <p>Body Work</p>
-            </div>
-          </Link>
-
-          <Link
-            href="/single-service"
-            className="flex items-center justify-center p-10 bg-white w-full text-black"
-          >
-            <div className="flex items-center justify-center flex-col gap-2">
-              <Image src={icon_4} alt="" width={25}></Image>
-              <p>Batteries</p>
-            </div>
-          </Link>
-
-          <Link
-            href="/single-service"
-            className="flex items-center justify-center p-10 bg-white w-full text-black"
-          >
-            <div className="flex items-center justify-center flex-col gap-2">
-              <Image src={icon_5} alt="" width={25}></Image>
-              <p>Car wash</p>
-            </div>
-          </Link>
-
-          <Link
-            href="/single-service"
-            className="flex items-center justify-center p-10 bg-white w-full text-black"
-          >
-            <div className="flex items-center justify-center flex-col gap-2">
-              <Image src={icon_6} alt="" width={25}></Image>
-              <p>AC Repair</p>
-            </div>
-          </Link>
-        </div>
       </section>
 
-      <section className="px-14 sm:px-16 md:px-20 lg:px-24 xl:px-28 mb-20 text-center lg:text-start flex flex-col items-center lg:flex-row lg:justify-between gap-10">
-        <div className=" max-w-md w-full flex flex-col lg:justify-start  items-center lg:items-start gap-8">
-          <h2 className="text-[25px] font-semibold">
-            How we work and the
-            <br /> process we follow
-          </h2>
+      <section className="px-14 sm:px-16 md:px-20 lg:px-24 xl:px-28 mb-20 text-center lg:text-start flex items-center justify-center">
+        <div className="w-full 2xl:max-w-[1300px] flex flex-col items-center lg:flex-row lg:justify-between gap-10">
+          <div className=" max-w-md w-full flex flex-col lg:justify-start  items-center lg:items-start gap-8">
+            <h2 className="text-[25px] font-semibold">
+              How we work and the
+              <br /> process we follow
+            </h2>
 
-          <div className="flex flex-col items-center gap-6 lg:items-start">
-            <div className="flex flex-col items-center gap-4 lg:flex-row lg:items-start">
-              <div className="w-[35px] p-1 h-[35px] bg-[#00D289] text-white rounded-full max-w-sm flex items-center justify-center">
-                <UilCheck></UilCheck>
+            <div className="flex flex-col items-center gap-6 lg:items-start">
+              <div className="flex flex-col items-center gap-4 lg:flex-row lg:items-start">
+                <div className="w-[35px] p-1 h-[35px] bg-[#00D289] text-white rounded-full max-w-sm flex items-center justify-center">
+                  <UilCheck></UilCheck>
+                </div>
+                <p className="leading-7 max-w-sm font-medium">
+                  Through True Rich Attended does no end it his mother since
+                </p>
               </div>
-              <p className="leading-7 max-w-sm font-medium">
-                Through True Rich Attended does no end it his mother since
-              </p>
-            </div>
 
-            <div className="flex flex-col items-center gap-4 lg:flex-row lg:items-start">
-              <div className="w-[35px] p-1 h-[35px] bg-[#00D289] text-white rounded-full max-w-sm flex items-center justify-center">
-                <UilCheck></UilCheck>
+              <div className="flex flex-col items-center gap-4 lg:flex-row lg:items-start">
+                <div className="w-[35px] p-1 h-[35px] bg-[#00D289] text-white rounded-full max-w-sm flex items-center justify-center">
+                  <UilCheck></UilCheck>
+                </div>
+                <p className="leading-7 max-w-sm font-medium">
+                  Through True Rich Attended does no end it his mother since
+                </p>
               </div>
-              <p className="leading-7 max-w-sm font-medium">
-                Through True Rich Attended does no end it his mother since
-              </p>
-            </div>
 
-            <div className="flex flex-col items-center gap-4 lg:flex-row lg:items-start">
-              <div className="w-[35px] p-1 h-[35px] bg-[#00D289] text-white rounded-full max-w-sm flex items-center justify-center">
-                <UilCheck></UilCheck>
+              <div className="flex flex-col items-center gap-4 lg:flex-row lg:items-start">
+                <div className="w-[35px] p-1 h-[35px] bg-[#00D289] text-white rounded-full max-w-sm flex items-center justify-center">
+                  <UilCheck></UilCheck>
+                </div>
+                <p className="leading-7 max-w-sm font-medium">
+                  Through True Rich Attended does no end it his mother since
+                </p>
               </div>
-              <p className="leading-7 max-w-sm font-medium">
-                Through True Rich Attended does no end it his mother since
-              </p>
             </div>
           </div>
-        </div>
 
-        <div className="flex flex-col items-center md:flex-row gap-10">
-          <Image
-            src={image_2}
-            alt=""
-            className="max-w-[250px] w-full object-cover"
-          ></Image>
-          <Image
-            src={image_3}
-            alt=""
-            className="max-w-[250px] w-full object-cover"
-          ></Image>
+          <div className="flex flex-col items-center md:flex-row gap-10">
+            <Image
+              src={image_2}
+              alt=""
+              className="max-w-[250px] w-full object-cover"
+            ></Image>
+            <Image
+              src={image_3}
+              alt=""
+              className="max-w-[250px] w-full object-cover"
+            ></Image>
+          </div>
         </div>
       </section>
 
-      <section className="px-14 sm:px-16 md:px-20 lg:px-24 xl:px-28 mb-20 text-center lg:text-start flex flex-col items-center gap-10 lg:flex-row lg:justify-between w-full">
-        <div className="flex flex-col items-center md:flex-row gap-10">
-          <Image
-            src={image_4}
-            alt=""
-            className="max-w-[250px] w-full object-cover"
-          ></Image>
-          <Image
-            src={image_5}
-            alt=""
-            className="max-w-[250px] w-full object-cover"
-          ></Image>
-        </div>
+      <section className="px-14 sm:px-16 md:px-20 lg:px-24 xl:px-28 mb-20 text-center lg:text-start flex items-center justify-center w-full">
+        <div className="w-full 2xl:max-w-[1300px] flex flex-col items-center gap-10 lg:flex-row lg:justify-between">
+          <div className="flex flex-col items-center md:flex-row gap-10">
+            <Image
+              src={image_4}
+              alt=""
+              className="max-w-[250px] w-full object-cover"
+            ></Image>
+            <Image
+              src={image_5}
+              alt=""
+              className="max-w-[250px] w-full object-cover"
+            ></Image>
+          </div>
 
-        <div className="max-w-md w-full flex flex-col items-center lg:items-start gap-3 transition-all">
-          <h2 className="text-[25px] font-semibold">
-            Diagnose Car Problems If You Don’t Know Much About Cars
-          </h2>
-          <p className="text-[#232536] leading-7">
-            We provide a full range of front end mechanical repairs for all
-            makes and models of cars, no matter the cause. This includes
-            everything from struts, shocks, and tie rod ends to ball joints,
-            springs everything from struts, shocks, and tie rod ends to ball
-            joints, springs
-          </p>
-          <button className="px-8 py-3 rounded-lg bg-[#FF6433] text-white w-fit hover:scale-95 duration-200">
-            Book a service
-          </button>
+          <div className="max-w-md w-full flex flex-col items-center lg:items-start gap-3 transition-all">
+            <h2 className="text-[25px] font-semibold">
+              Diagnose Car Problems If You Don’t Know Much About Cars
+            </h2>
+            <p className="text-[#232536] leading-7">
+              We provide a full range of front end mechanical repairs for all
+              makes and models of cars, no matter the cause. This includes
+              everything from struts, shocks, and tie rod ends to ball joints,
+              springs everything from struts, shocks, and tie rod ends to ball
+              joints, springs
+            </p>
+            <button className="px-8 py-3 rounded-lg bg-[#FF6433] text-white w-fit hover:scale-95 duration-200">
+              Book a service
+            </button>
+          </div>
         </div>
       </section>
 

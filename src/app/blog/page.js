@@ -32,8 +32,8 @@ function page() {
     <Fragment>
       <Header></Header>
 
-      <section className="w-full flex mt-5 flex-col justify-center  mb-20 ">
-        <div className=" lg:relative">
+      <section className="w-full flex mt-5 flex-col justify-center items-center  mb-20 ">
+        <div className=" lg:relative 2xl:max-w-[1300px] w-full">
           <div
             style={{
               backgroundImage: `url(${hero_image.src})`,
@@ -76,226 +76,230 @@ function page() {
         </div>
       </section>
 
-      <section className="px-14 sm:px-16 md:px-20 lg:px-24 xl:px-28 mb-20 py-14 bg-[#F5F5F5] flex flex-col items-center gap-10 lg:gap-20 md:flex-row  text-center lg:text-start">
-        <div className="bg-white p-5 max-w-md w-full flex flex-col items-center gap-4 lg:items-start transition-all">
-          <Image src={image_1} alt="" className="object-cover h-52"></Image>
+      <section className="px-14 sm:px-16 md:px-20 lg:px-24 xl:px-28 mb-20 py-14 bg-[#F5F5F5] flex items-center justify-center  text-center lg:text-start">
+        <div className="w-full 2xl:max-w-[1300px] flex flex-col items-center gap-10 lg:gap-20 md:flex-row">
+          <div className="bg-white p-5 max-w-md w-full flex flex-col items-center gap-4 lg:items-start transition-all">
+            <Image src={image_1} alt="" className="object-cover h-52"></Image>
 
-          <span className="text-[#939191] text-[14px]">
-            Posted on October 6th 2021
-          </span>
-          <h3 className="text-[20px] font-semibold">
-            Should I Buy a New Car or Lease a New Car in 2021?
-          </h3>
-          <p className="text-[#232536]">
-            We provide a full range of front end mechanical repairs for all
-            makes and models of cars, no matter the cause. This includes, We
-            provide a full range of front end mechanical.
-          </p>
+            <span className="text-[#939191] text-[14px]">
+              Posted on October 6th 2021
+            </span>
+            <h3 className="text-[20px] font-semibold">
+              Should I Buy a New Car or Lease a New Car in 2021?
+            </h3>
+            <p className="text-[#232536]">
+              We provide a full range of front end mechanical repairs for all
+              makes and models of cars, no matter the cause. This includes, We
+              provide a full range of front end mechanical.
+            </p>
 
-          <Link
-            href="/blog-post"
-            className="flex items-center flex-col md:flex-row gap-3 font-medium hover:gap-4 duration-200"
-          >
-            Read more{" "}
-            <Image src={arrow} alt="" objectFit="cover" width={30}></Image>
-          </Link>
-        </div>
+            <Link
+              href="/blog-post"
+              className="flex items-center flex-col md:flex-row gap-3 font-medium hover:gap-4 duration-200"
+            >
+              Read more{" "}
+              <Image src={arrow} alt="" objectFit="cover" width={30}></Image>
+            </Link>
+          </div>
 
-        <div className=" w-full flex flex-col items-center lg:items-start gap-8">
-          <Link
-            href="/blog-post"
-            className="flex flex-col w-full items-center md:flex-row gap-4"
-          >
-            <Image
-              src={image_2}
-              alt=""
-              className="w-full h-36 lg:w-36 object-cover"
-            ></Image>
+          <div className=" w-full flex flex-col items-center lg:items-start gap-8">
+            <Link
+              href="/blog-post"
+              className="flex flex-col w-full items-center md:flex-row gap-4"
+            >
+              <Image
+                src={image_2}
+                alt=""
+                className="w-full h-36 lg:w-36 object-cover"
+              ></Image>
 
-            <div className="flex flex-col items-center lg:items-start gap-2">
-              <h3 className="text-[18px] font-semibold">
-                Get an Awesome Number Plate for Your New Car
-              </h3>
-              <p className="text-[#939191]">Posted on October 6th 2021</p>
-            </div>
-          </Link>
+              <div className="flex flex-col items-center lg:items-start gap-2">
+                <h3 className="text-[18px] font-semibold">
+                  Get an Awesome Number Plate for Your New Car
+                </h3>
+                <p className="text-[#939191]">Posted on October 6th 2021</p>
+              </div>
+            </Link>
 
-          <Link
-            href="/blog-post"
-            className="flex flex-col w-full items-center md:flex-row gap-4"
-          >
-            <Image
-              src={image_3}
-              alt=""
-              className="w-full h-36 lg:w-36 object-cover"
-            ></Image>
+            <Link
+              href="/blog-post"
+              className="flex flex-col w-full items-center md:flex-row gap-4"
+            >
+              <Image
+                src={image_3}
+                alt=""
+                className="w-full h-36 lg:w-36 object-cover"
+              ></Image>
 
-            <div className="flex flex-col items-center lg:items-start gap-2">
-              <h3 className="text-[18px] font-semibold">
-                Would you Let a Robot Drive your Car? Our AI Future
-              </h3>
-              <p className="text-[#939191]">Posted on October 6th 2021</p>
-            </div>
-          </Link>
+              <div className="flex flex-col items-center lg:items-start gap-2">
+                <h3 className="text-[18px] font-semibold">
+                  Would you Let a Robot Drive your Car? Our AI Future
+                </h3>
+                <p className="text-[#939191]">Posted on October 6th 2021</p>
+              </div>
+            </Link>
 
-          <Link
-            href="/blog-post"
-            className="flex flex-col w-full items-center md:flex-row gap-4"
-          >
-            <Image
-              src={image_4}
-              alt=""
-              className="w-full h-36 lg:w-36 object-cover"
-            ></Image>
+            <Link
+              href="/blog-post"
+              className="flex flex-col w-full items-center md:flex-row gap-4"
+            >
+              <Image
+                src={image_4}
+                alt=""
+                className="w-full h-36 lg:w-36 object-cover"
+              ></Image>
 
-            <div className="flex flex-col items-center lg:items-start gap-2">
-              <h3 className="text-[18px] font-semibold">
-                Will Electric Technology Soon Rule The Road?
-              </h3>
-              <p className="text-[#939191]">Posted on October 6th 2021</p>
-            </div>
-          </Link>
+              <div className="flex flex-col items-center lg:items-start gap-2">
+                <h3 className="text-[18px] font-semibold">
+                  Will Electric Technology Soon Rule The Road?
+                </h3>
+                <p className="text-[#939191]">Posted on October 6th 2021</p>
+              </div>
+            </Link>
+          </div>
         </div>
       </section>
 
-      <section className="px-14 sm:px-16 text-center lg:text-start md:px-20 lg:px-24 xl:px-28 mb-20 flex flex-col items-center gap-10 md:grid md:grid-cols-2 lg:grid-cols-3">
-        <Link
-          href="/blog-post"
-          className="flex flex-col items-center lg:items-start gap-3"
-        >
-          <Image
-            src={blog_1}
-            alt=""
-            className="object-cover w-full h-40"
-          ></Image>
+      <section className="px-14 sm:px-16 text-center lg:text-start md:px-20 lg:px-24 xl:px-28 mb-20 flex items-center justify-center w-full">
+        <div className="w-full 2xl:max-w-[1300px] flex flex-col items-center gap-10 md:grid md:grid-cols-2 lg:grid-cols-3">
+          <Link
+            href="/blog-post"
+            className="flex flex-col items-center lg:items-start gap-3"
+          >
+            <Image
+              src={blog_1}
+              alt=""
+              className="object-cover w-full h-40"
+            ></Image>
 
-          <span className="text-[#939191] text-[14px]">
-            Posted on October 6th 2021
-          </span>
-          <h4 className="text-[18px] font-semibold">
-            We provide blow straight past it with the wheels skidding
-          </h4>
-          <p className="leading-7 text-[#232536]">
-            We provide a full range of front end mechanical repairs for all
-            makes and models We provide a full range of front end mechanical
-            repairs for all makes and models
-          </p>
-        </Link>
+            <span className="text-[#939191] text-[14px]">
+              Posted on October 6th 2021
+            </span>
+            <h4 className="text-[18px] font-semibold">
+              We provide blow straight past it with the wheels skidding
+            </h4>
+            <p className="leading-7 text-[#232536]">
+              We provide a full range of front end mechanical repairs for all
+              makes and models We provide a full range of front end mechanical
+              repairs for all makes and models
+            </p>
+          </Link>
 
-        <Link
-          href="/blog-post"
-          className="flex flex-col items-center lg:items-start gap-3"
-        >
-          <Image
-            src={blog_2}
-            alt=""
-            className="object-cover w-full h-40"
-          ></Image>
+          <Link
+            href="/blog-post"
+            className="flex flex-col items-center lg:items-start gap-3"
+          >
+            <Image
+              src={blog_2}
+              alt=""
+              className="object-cover w-full h-40"
+            ></Image>
 
-          <span className="text-[#939191] text-[14px]">
-            Posted on October 6th 2021
-          </span>
-          <h4 className="text-[18px] font-semibold">
-            5 Genius Car Accessories You Should Never Drive Without
-          </h4>
-          <p className="leading-7 text-[#232536]">
-            We provide a full range of front end mechanical repairs for all
-            makes and models We provide a full range of front end mechanical
-            repairs for all makes and models
-          </p>
-        </Link>
+            <span className="text-[#939191] text-[14px]">
+              Posted on October 6th 2021
+            </span>
+            <h4 className="text-[18px] font-semibold">
+              5 Genius Car Accessories You Should Never Drive Without
+            </h4>
+            <p className="leading-7 text-[#232536]">
+              We provide a full range of front end mechanical repairs for all
+              makes and models We provide a full range of front end mechanical
+              repairs for all makes and models
+            </p>
+          </Link>
 
-        <Link
-          href="/blog-post"
-          className="flex flex-col items-center lg:items-start gap-3"
-        >
-          <Image
-            src={blog_3}
-            alt=""
-            className="object-cover w-full h-40"
-          ></Image>
+          <Link
+            href="/blog-post"
+            className="flex flex-col items-center lg:items-start gap-3"
+          >
+            <Image
+              src={blog_3}
+              alt=""
+              className="object-cover w-full h-40"
+            ></Image>
 
-          <span className="text-[#939191] text-[14px]">
-            Posted on October 6th 2021
-          </span>
-          <h4 className="text-[18px] font-semibold">
-            We provide blow straight past it with the wheels skidding
-          </h4>
-          <p className="leading-7 text-[#232536]">
-            We provide a full range of front end mechanical repairs for all
-            makes and models We provide a full range of front end mechanical
-            repairs for all makes and models
-          </p>
-        </Link>
+            <span className="text-[#939191] text-[14px]">
+              Posted on October 6th 2021
+            </span>
+            <h4 className="text-[18px] font-semibold">
+              We provide blow straight past it with the wheels skidding
+            </h4>
+            <p className="leading-7 text-[#232536]">
+              We provide a full range of front end mechanical repairs for all
+              makes and models We provide a full range of front end mechanical
+              repairs for all makes and models
+            </p>
+          </Link>
 
-        <Link
-          href="/blog-post"
-          className="flex flex-col items-center lg:items-start gap-3"
-        >
-          <Image
-            src={blog_4}
-            alt=""
-            className="object-cover w-full h-40"
-          ></Image>
+          <Link
+            href="/blog-post"
+            className="flex flex-col items-center lg:items-start gap-3"
+          >
+            <Image
+              src={blog_4}
+              alt=""
+              className="object-cover w-full h-40"
+            ></Image>
 
-          <span className="text-[#939191] text-[14px]">
-            Posted on October 6th 2021
-          </span>
-          <h4 className="text-[18px] font-semibold">
-            We provide blow straight past it with the wheels skidding
-          </h4>
-          <p className="leading-7 text-[#232536]">
-            We provide a full range of front end mechanical repairs for all
-            makes and models We provide a full range of front end mechanical
-            repairs for all makes and models
-          </p>
-        </Link>
+            <span className="text-[#939191] text-[14px]">
+              Posted on October 6th 2021
+            </span>
+            <h4 className="text-[18px] font-semibold">
+              We provide blow straight past it with the wheels skidding
+            </h4>
+            <p className="leading-7 text-[#232536]">
+              We provide a full range of front end mechanical repairs for all
+              makes and models We provide a full range of front end mechanical
+              repairs for all makes and models
+            </p>
+          </Link>
 
-        <Link
-          href="/blog-post"
-          className="flex flex-col items-center lg:items-start gap-3"
-        >
-          <Image
-            src={blog_5}
-            alt=""
-            className="object-cover w-full h-40"
-          ></Image>
+          <Link
+            href="/blog-post"
+            className="flex flex-col items-center lg:items-start gap-3"
+          >
+            <Image
+              src={blog_5}
+              alt=""
+              className="object-cover w-full h-40"
+            ></Image>
 
-          <span className="text-[#939191] text-[14px]">
-            Posted on October 6th 2021
-          </span>
-          <h4 className="text-[18px] font-semibold">
-            5 Genius Car Accessories You Should Never Drive Without
-          </h4>
-          <p className="leading-7 text-[#232536]">
-            We provide a full range of front end mechanical repairs for all
-            makes and models We provide a full range of front end mechanical
-            repairs for all makes and models
-          </p>
-        </Link>
+            <span className="text-[#939191] text-[14px]">
+              Posted on October 6th 2021
+            </span>
+            <h4 className="text-[18px] font-semibold">
+              5 Genius Car Accessories You Should Never Drive Without
+            </h4>
+            <p className="leading-7 text-[#232536]">
+              We provide a full range of front end mechanical repairs for all
+              makes and models We provide a full range of front end mechanical
+              repairs for all makes and models
+            </p>
+          </Link>
 
-        <Link
-          href="/blog-post"
-          className="flex flex-col items-center lg:items-start gap-3"
-        >
-          <Image
-            src={blog_6}
-            alt=""
-            className="object-cover w-full h-40"
-          ></Image>
+          <Link
+            href="/blog-post"
+            className="flex flex-col items-center lg:items-start gap-3"
+          >
+            <Image
+              src={blog_6}
+              alt=""
+              className="object-cover w-full h-40"
+            ></Image>
 
-          <span className="text-[#939191] text-[14px]">
-            Posted on October 6th 2021
-          </span>
-          <h4 className="text-[18px] font-semibold">
-            We provide blow straight past it with the wheels skidding
-          </h4>
-          <p className="leading-7 text-[#232536]">
-            We provide a full range of front end mechanical repairs for all
-            makes and models We provide a full range of front end mechanical
-            repairs for all makes and models
-          </p>
-        </Link>
+            <span className="text-[#939191] text-[14px]">
+              Posted on October 6th 2021
+            </span>
+            <h4 className="text-[18px] font-semibold">
+              We provide blow straight past it with the wheels skidding
+            </h4>
+            <p className="leading-7 text-[#232536]">
+              We provide a full range of front end mechanical repairs for all
+              makes and models We provide a full range of front end mechanical
+              repairs for all makes and models
+            </p>
+          </Link>
+        </div>
       </section>
 
       <AboveFooter></AboveFooter>
